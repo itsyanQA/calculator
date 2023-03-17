@@ -14,38 +14,35 @@
         <div class="calculator-container">
                 <div class="input-section">
                     <input class="audit" type="text" readonly>
-                    <input class="result" type="text" readonly>
-                    <!-- <div class="audit"></div>
-                    <div class="result"></div> -->
                 </div>
                 <div class="upper-buttons">
-                    <button class="button" onclick="clearAudit()">Clear</button>
+                    <button class="button clear" onclick="clearAudit()">C</button>
                     <button class="button delete" onclick="deleteValue()"><img src="./images/backspace-svgrepo-com.svg" alt="backspace-btn"></button>
                 </div>    
                 <div class="buttons-section">
                     <div class="first-section">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>/</button>
+                        <button class="number">7</button>
+                        <button class="number">8</button>
+                        <button class="number">9</button>
+                        <button class="operator">/</button>
                     </div>
                     <div class="second-section">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>x</button>
+                        <button class="number">4</button>
+                        <button class="number">5</button>
+                        <button class="number">6</button>
+                        <button class="operator">*</button>
                     </div>
                     <div class="third-section">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>-</button>
+                        <button class="number">1</button>
+                        <button class="number">2</button>
+                        <button class="number">3</button>
+                        <button class="operator">-</button>
                     </div>
                     <div class="fourth-section">
-                        <button>.</button>
-                        <button>0</button>
-                        <button class="equal-sign" onclick="getResult()">=</button>
-                        <button>+</button>
+                        <button class="number">.</button>
+                        <button class="number">0</button>
+                        <button class="equal-sign operator" onclick="getResult()">=</button>
+                        <button class="operator">+</button>
                     </div>
                 </div>
         </div> 
