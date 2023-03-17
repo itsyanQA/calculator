@@ -6,32 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./calculator.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <script src="./calculator.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="main-container">
         <div class="calculator-container">
-            <!-- <div class="upper-buttons">
-                <div class="button">C</div>
-                <div class="button delete"><img src="./images/backspace-svgrepo-com.svg" alt="backspace-btn"></div>
-            </div>     -->
-
-            <div class="buttons-container">
-                <div class="numbers-container">
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                    <div class="button zero-btn">0</div>
-                    <div class="button result">=</div>
+                <div class="input-section">
+                    <input class="audit" type="text" readonly>
+                    <input class="result" type="text" readonly>
+                    <!-- <div class="audit"></div>
+                    <div class="result"></div> -->
                 </div>
-            </div>
-        </div>
+                <div class="upper-buttons">
+                    <button class="button" onclick="clearAudit()">Clear</button>
+                    <button class="button delete" onclick="deleteValue()"><img src="./images/backspace-svgrepo-com.svg" alt="backspace-btn"></button>
+                </div>    
+                <div class="buttons-section">
+                    <div class="first-section">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>/</button>
+                    </div>
+                    <div class="second-section">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>x</button>
+                    </div>
+                    <div class="third-section">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>-</button>
+                    </div>
+                    <div class="fourth-section">
+                        <button>.</button>
+                        <button>0</button>
+                        <button class="equal-sign" onclick="getResult()">=</button>
+                        <button>+</button>
+                    </div>
+                </div>
+        </div> 
     </div>
 </body>
 </html>

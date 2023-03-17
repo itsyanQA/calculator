@@ -1,4 +1,4 @@
-body {
+body, button {
     background-color: dimgrey;
     font-family: "Josefin Sans";
     font-size: 25px;
@@ -12,52 +12,41 @@ body {
 }                                              
 
 .calculator-container {
-    display: flex;
     border: 1px solid red;
     width: 60vh;
     height: 60vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.numbers-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    /* border: 1px solid #2d2d2d; */
-
-}
-
-.buttons-container {
-    border: 1px solid #2d2d2d;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-
 }
 
 .upper-buttons {
     display: flex;
-    flex-wrap: wrap;
-    border: 1px solid red;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #2d2d2d;
-    flex-wrap: wrap;
-    flex: 1;
+    justify-content: space-around;
 }
 
 .upper-buttons .button {
-    display: flex;
-    flex-wrap: nowrap;
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
 }
 
+.buttons-section {
+    border: 1px solid black;
+}
+
+.first-section, 
+.second-section, 
+.third-section,
+.fourth-section  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-section>div>button {
+    width: 100%; 
+    height: 64px; 
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
