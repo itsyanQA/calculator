@@ -33,9 +33,9 @@ button {
 
 .upper-buttons {
     display: flex;
-    justify-content: space-around;
     padding: 8px;
     margin: 8px;
+    gap: 8px;
 }
 
 .upper-buttons .button {
@@ -43,6 +43,10 @@ button {
     height: 38px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+}
+
+.upper-buttons .delete {
     align-items: center;
 }
 
